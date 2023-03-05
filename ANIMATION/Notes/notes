@@ -1,0 +1,63 @@
+*********** Grids & Responsiveness *************
+
+NOTE : WE USE GRID TO CREATE LAYOUT
+
+1. Grid-area
+-> specifies a particular area or set of rows and columns that a grid item occupies.
+-> its applied to grid item itself with css.
+-> .item{ grid-area: 1/2/3/3}
+-> grid-area is a shorthand property for : grid-row-start,grid-column-start,grid-row-end,grid-column-end.
+-> the code above places itrm from rows 1-3, and columns 2-3.
+
+
+2. Grid-template-area
+-> used to name the rows and columns of a grid and to set its layout.
+
+3.Advanced grid concepts
+ -> fr unit
+ -> repeat function
+ -> grid-auto-rows: minmax()
+
+4. Grid properties
+ -> justify-content : horizontal axis //container // doesnt affect on width or height
+ -> align-content : row-gap
+ -> justify-items  : affect on width or height
+ -> align-items : cross axis  // container
+ -> justify-self : horizontal axis //grid-items
+ -> align-self : cross axis  // grid-items 
+ -> place-items : shorthand 
+ -> place-self : shorthand
+
+5. diff between grid and online grid
+6. complex grid layouts
+7. nesting and overlapping of grid items
+
+8. Math Functions in CSS
+-> calc()
+-> e.g. width: calc(50% - 100px)
+-> 50% width of viewport - 100px
+
+9. Variables
+-> syntax : --var-name :  
+-> declared in root element i.e  root element of html tags thus the scope is global.
+
+**********Animation***************
+animation can be done by -> transition & animation keyframes
+
+10. Transitions in CSS
+-> transition timing
+-> transition function
+-> transition delay
+-> transition property
+-> transition : property (bg-color) , duration(2s) , transition timing fn(ease-in) , delay(4s). 
+
+11. Animation & Keyframes
+-> animation-name
+-> animation-duration
+-> animation-iterator-count
+-> animation-fill-mode
+-> animation-timing-function
+-> animation-delay
+-> animation-direction 
+
+-> to tell starting or ending state of animation we use @keyframes animation-name{}

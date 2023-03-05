@@ -1,0 +1,239 @@
+1. HTML is a skeleton , it gives description of content. (what ? )
+2. CSS does styling , formatting , appearance (how ?) stands for Cascading style sheet
+
+- SELECTORS IN CSS : its a way where we can select an elements
+
+1.  Simple selector
+    #SYNTAX : selector a { // a -> selector
+    color : red ; // color -> property // red -> value
+    }
+
+    a. element selector / type selector / tag selector
+    : select html elements by using an elements tag name.  
+     e.g. p { // p -> element selector
+    color : red;
+    }
+
+         b. class selector
+         : select an element using class attribute
+            e.g. .className{
+                    color: red;
+            }
+
+        c. id selector
+        : select an element using id attribute , provides more specificity , it must be unique
+            e.g. #idName{
+                color: red;
+            }
+
+        2. Pseudo-class selector
+        : pseudo-class is a keyword added to a selector that specifies a special state of the selected elements.
+            e.g. hover can be used to change a buttons color when the users pointers hovers over it .
+            button : hover{
+                color: yellow;
+            }
+
+        3. Multiple selector / grouping selector
+        : select multiple html elements in same rule seperated by commas.
+
+        4. universal selector
+        5. nested selector
+        6. attribute selector
+
+2.  Specificity
+    : as there are multiple selectors each has given its priority
+    HIGHEST --------> LOWEST
+
+    1.  Inline styling
+    2.  id
+    3.  classes , attributes ([type="radio"]) and pseudo-classes (:hover)
+    4.  elements / type selectors (h1) and pseudo-elements (::before)
+
+3.  BOX MODEL IN CSS
+
+- its the basic building block of css.
+- according to box model, every element on a page is rectangular box and may have width, height, padding , borders and margins.
+
+padding : space between content and border
+
+margin : outer part of border
+
+box-sizing : makes content smaller in size and keeps the box same size.
+
+4. Colors in CSS
+   a. hexadecimal colors -> #RRGGBB , all must be between 00 and ff.
+   ex: #0000ff is rendered as blue , bcoz blue component is set to its highest value (ff) and others are 00.
+
+b. RGB colors
+-> rgb(red,green,blue) can be between 0 and 255 or (from 0% to 100%).
+ex: rgb(0,0,255) is blue.
+
+c. predefined/cross-browser color names
+-> 140 color names are predefined in HTML and CSS color specification.
+ex: blue , yellow , etc.
+
+d. RGBA colors
+e. HSL colors
+f. HSLA colors
+
+5. FONT
+   a. font-family
+   b. font-weight
+   c. font-style
+   d. emphasis and importance
+   e. how to add external fonts? -> google fonts
+
+6. UNITS IN CSS
+   a. Absolute unit (fixed value) irrespective of device
+
+   - mm
+   - cm
+   - in
+   - px -> (1/96 inch)
+
+   b. Percentage unit
+
+   - div{ width : 10% }; of parent width.
+
+   c. Relative unit
+
+   - relative to font size
+     = em -> relative to parent element font size.
+     ex: 1em -> 1*18 = 18 , 2em -> 2*18 = 36.
+
+     = rem -> relative to root i.e. HTMl
+     ex: 1rem = 1\*16=16px
+
+   - related to document / viewport
+     =vw (1/100*width of viewport)
+     =vh (1/100*height of viewport)
+     (viewport-> display)
+
+H.W : DIFFERENCE BETWEEN 1% AND 1vw.
+
+7. CSS gradients (transition from one color to another)
+   -> let you display smooth transitions between two or more specified colors.
+
+- linear gradients (goes up/down/left/right/diagonally)
+  syntax : background-image : linear-gradient (direction , color-stop1, color-stop2,...);
+  -> directions : default , specific , using angles , using transparency.
+
+- Radient gradients (defined by their center)
+  syntax : background-image : radial-gradient(shape size at position, start-color, ....last-color);
+  -> you can change spacing of colours/ set pre-defined shapes/ repeating gradient.
+
+- Conic gradients (rotated around a center point)
+  syntax : background-image : conic-gradient([from angle][at position,]color[degree],color[degree],....);
+
+8. CSS shadow effects
+   : add shadow to text and to elements.
+
+- text-shadow
+  -> applies shadow to text.
+
+  - can add horizontal/vertical shadows.
+  - color , blur ,multiple shadows to text
+  - how can we add border using shadows?
+
+- box-shadow
+  -> default color of shadow is text color
+
+* by using negative values we can change the directon.
+* color of shadow can be changed.
+* blur can be added
+* spread radius can be changed.
+* multiple shadows can be added using comma.
+
+9. CSS Dimension properties
+
+- width
+- height
+- min-height : agr content km h to height utni hi hogi agr content bdh gya to height grow kr jayegi.
+- min-width
+- max-height : us limit k bad content daloge to vo content overflow ho jayega.
+- max-width
+
+10. Overflow property
+    -> when an elements content is too big to fit in its block formatting context - in both directions.
+
+- values -> visible , hidden , scroll , auto.
+
+11. CSS position property
+    -> specifies the type of positioning method used for an element (static , relative , fixed , absolute , or sticky).
+
+   - static : html elements are positioned static by default.
+   * positioned according to normal flow.
+
+   - relative : positioned relative to its normal position.
+   * setting the top, right , bottom , and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. other content will not be adjusted to fit into any gap left by the element. 
+
+   - fixed : positioned relative to its viewport .
+   * it always stays in the same place even if the page is scrolled.
+   * top,right,bottom and left properties are used to position the element.
+
+   - absolute : positioned relative to the nearest positioned ancestor.
+   * if has no positioned ancestors , it uses the document body, and moves along with page scroll.
+   *note :absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+   -sticky : positioned based on users scroll position.
+   * toggles between relative and fixed , depending on the scroll position. it is position relative until a given offset position is met in the viewport - then it sticks in place (like position-fixed).
+
+12. CSS - 2D transforms
+   -> allow you to move , rotate , scale , and skew elements.
+   - with transform property you can use 
+    * translate() -> movement 
+    * rotate()    -> rotate (+clockwise) (-anticlockwise)
+    * scaleX()    -> zooming
+    * scaleY()
+    * scale()
+    * skewX()     -> tilt
+    * skewY()
+    * skew()
+    * matrix()      -> can apply all properties
+
+
+13. CSS - 3D transforms  
+   translate and scale : on perspective
+
+
+14. CSS Flexbox (layout model -> space distribution , alignment capability)
+ -> flexbox is a great way to get more flexibility in you layouts and to simplify responsive design.
+ - makes easy to align elements on a 2D plane and is pretty easy to use once you get familier with the main properties.
+-> first step =  display : flex on a container
+-> the children to the flex container become flex items. 
+-> horizontal axis : main axis , vertical axis : cross axis
+-> by default main axis is horizontal  
+
+ *Flex-container Properties
+   - display : flex
+   - flex-direction
+   - flex-wrap : to keep the same size 
+   - flex-flow : shorthand notation
+   - justify-content : applies on main axis i.e horizontal 
+   - align items : applies on cross axis i.e vertical 
+   - align content : handles spacing/alignment   between flex-items,rows
+   - gap
+
+  * Flex-item properties
+   - order
+   - flex-grow : default value - 0 
+   - flex-shrink : default value - 1
+   - flex-basis : works same as width but when content increases it increase the size of flex-items 
+   - flex : shorthand notation
+   - align-self : align single element
+
+   * CSS GRID (unit - fr i.e. fraction equally splits)
+   -> collection of horizontal and vertical lines creating a pattern against which we can line up oor design elements.
+   -> they help us to create layouts in which our element wont jump around or change width as we move on from  page to page , providing greater consistency.
+   -> its two dimensional layout system for the web.
+   -> it lets you lay content in rows and columns.
+   -> it typically have columns,rows and then gap between each row and column.gaps are commonly referred as gutters. 
+
+
+   NOTE : FLEXBOX IS HOW CONTENT FLOWS i.e SPECIFIC TO CONTENT POSITIONING. ITS 1D
+     AND GRID IS LAYOUT. LIKE HEADER , SECTION THEN FOOTER. ITS 2D
+
+
+
+
+

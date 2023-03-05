@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to CodeHelp</h1>
+    </header>
+
+    <section>
+      <h2>Contact Form</h2>
+      <div class="name">
+        <label for="name">Name : </label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+      <div class="mail">
+        <label for="mail">Email : </label>
+        <input type="email" id="mail" placeholder="Enter your email" />
+      </div>
+      <div class="number">
+        <label for="number">Contact Number : </label>
+        <input type="number" id="number" placeholder="Enter your number" />
+      </div>
+      <div class="Gender">
+        <label for="gender">Gender:</label>
+
+        <select name="gender" id="gender">
+          <option value="male">Female</option>
+          <option value="female">male</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="date">
+        <label for="date">Date Of Birth : </label>
+        <input type="date" id="date" />
+      </div>
+      <div class="rating">
+        <label for="">Rating : </label>
+        <input type="radio" id="r" name="rating" />
+        <label for="r">1</label>
+        <input type="radio" id="a" name="rating" />
+        <label for="a">2</label>
+        <input type="radio" id="t" name="rating" />
+        <label for="t">3</label>
+      </div>
+      <div class="address">
+        <label for="address">Enter Your Address : </label><br />
+        <textarea
+          name="address"
+          id="address"
+          placeholder="Enter your Address"
+          cols="35"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="button">
+        <button>reset</button>
+        <input type="submit" />
+      </div>
+    </section>
+  </body>
+</html>
